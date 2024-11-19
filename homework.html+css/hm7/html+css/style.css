@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: #8b0000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    background-color: rgb(240, 240, 159);
+    width: fit-content;
+    font-style: italic;
+}
+#cars{
+    border: 10px double  rgb(0, 0, 0) ;
+    width: fit-content ;
+    background-color: rgba(255, 180, 41, 0.9);
+    
+}
+
+.ford {
+    border: 5px dashed rgba(0, 155, 13, 0.8);
+    width: fit-content;
+
+}
+.Mercedes {
+    border: 5px dashed rgba(213, 238, 146, 0.7);
+    width: fit-content;
+
+}
+.Skoda {
+    border: 5px dashed rgba(78, 134, 160, 0.75);
+    width: fit-content;
+}
+.Camaro{
+    border: 5px dashed rgba(68, 61, 170, 0.65);
+    width: fit-content;
+}
+
+
+button {
+    background-color: hsla(303, 52%, 68%, 75%);
+   color: hsl(120, 70%, 78%)
+}
+button:hover {
+    color: rgb(11, 139, 11);
+}
