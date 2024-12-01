@@ -1,0 +1,281 @@
+body {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+}
+
+.logo {
+    padding: 10px;
+    width: max-content;
+}
+
+.header {
+    text-align: center;
+    grid-column: 2;
+}
+
+.nav {
+    grid-row: 2;
+    grid-column: 1/ span 3;
+    place-items: center;
+    position: sticky;
+
+    top: 0px;
+
+}
+
+.navbuttons {
+    border: none;
+    padding: 14px 70px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline;
+
+}
+
+.navbuttons a {
+    color: white;
+}
+
+.navbuttons:hover {
+    background-color: red;
+
+}
+
+.bgphoto {
+    grid-row: 3;
+    grid-column: 1/span 3;
+    width: 100%;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 20px;
+    grid-row: 4/ span 2;
+    grid-column: 1/ span 2;
+
+}
+
+.card1 {
+    flex-shrink: 0;
+    width: 200px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+.card1 p {
+    color: white;
+}
+
+.drop a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.drop .brand {
+    display: none;
+    background-color: black;
+    position: absolute;
+    min-width: 100px;
+    width: 11%;
+
+}
+
+.drop:hover .brand {
+    display: block;
+}
+
+.brand a:hover {
+    background-color: red;
+    color: white;
+}
+
+.drop {
+    display: inline;
+}
+
+.cards {
+    display: grid;
+    grid-column: 1/span 3;
+    place-items: center;
+}
+
+.card1:hover {
+    background-color: rgb(63, 11, 11);
+
+}
+
+.aside {
+    grid-row: 4;
+    grid-column: 3;
+    right: 0px;
+    padding-left: 40px;
+
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container1 {
+    grid-row: 4;
+    grid-column: 1 / span 3;
+}
+
+.container2 {
+    grid-row: 5;
+    grid-column: 1 / span 3;
+}
+
+.container3 {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+}
+
+.container4 {
+    grid-row: 7;
+    grid-column: 1 / span 3;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    justify-items: center;
+    grid-row: 8;
+    grid-column: 1 / span 3;
+}
+
+
+.YOURTIME {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 18px;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 18px;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+.follow a {
+    text-decoration: none;
+    color: white(211, 32, 32);
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    color: rgb(255, 255, 255);
+}
+
+.follow a:hover {
+    background-color: #444;
+}
+
+
+.Filler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 18px;
+    text-align: center;
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.info {
+    grid-row: 9;
+    grid-column: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.help {
+    grid-row: 9;
+    grid-column: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.SUBMIT {
+    grid-row: 9;
+    grid-column: 2;
+    text-align: center;
+}
+
+.formph {
+    grid-row: 4;
+    grid-column: 1 / span 3;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1100px) {
+
+    body, .navbuttons
+    { display: block; }
+}
+@media screen and (max-width: 1024px) {
+
+    body, .navbuttons
+    {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    body,
+    .navbuttons {
+          grid-template-columns: 1fr;
+          
+    }
+}
+
+@media screen and (max-width: 480px) {
+        .navbuttons {
+            padding: 10px 40px;
+        }
+    }
