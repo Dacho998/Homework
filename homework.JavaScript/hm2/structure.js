@@ -57,7 +57,7 @@ else if (calculation === 11) {
 
 let input = prompt("Tell me your amount of money:");
 let amount = parseInt(input);
-if (isNaN(amount)) {
+if (Number.isNaN(amount)) {
     alert("Please enter a number.");
     console.log("Please enter a number.");
 } else {
