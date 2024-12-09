@@ -46,7 +46,7 @@ else if (calculation === 9) {
 else if (calculation === 10) {
     alert(`Your Chinese Zodiac Sign is: Dog`);
 }
-else if (calculation === 11) {
+else if  (calculation === 11) {
     alert(`Your Chinese Zodiac Sign is: Pig`);
 }
 
