@@ -15,5 +15,5 @@ function maxMin(numbers){
     sum=max+min;
     return `Max: ${max}, Min: ${min}, Sum: ${sum}`;
 }
-let x=maxMin([13, 43, 11, 34, 23]);
+let x=maxMin([5, 43, 103, 34, 23]);
 console.log(x)
