@@ -9,6 +9,7 @@ function fetchUser() {
         .then(function (text) {
             let output = document.getElementById('output');
             let parse = JSON.parse(text);
+            output.innerHTML=''
             for (i = 0; i < parse.length; i++) {
                 let user = parse[i];
                 output.innerHTML += `
