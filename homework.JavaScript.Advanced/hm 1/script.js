@@ -3,8 +3,8 @@ let btn = document.getElementById('btn');
 function fetchUser() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(function (response) {
-            let resp = response.text()
-            return resp;
+            let result = response.text()
+            return result;
         })
         .then(function (text) {
             let output = document.getElementById('output');
