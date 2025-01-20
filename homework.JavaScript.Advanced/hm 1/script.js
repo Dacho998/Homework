@@ -10,7 +10,7 @@ function fetchUser() {
             let output = document.getElementById('output');
             let parse = JSON.parse(text);
             output.innerHTML=''
-            for (i = 0; i < parse.length; i++) {
+            for (let i = 0; i < parse.length; i++) {
                 let user = parse[i];
                 output.innerHTML += `
     <p>Name: ${user.name}</p>
@@ -19,7 +19,7 @@ function fetchUser() {
     <p>Phone Number: ${user.phone}</p>
     <hr>
     `
-            }
+        }
         })
         .catch(function (){
             output.innerHTML = '<p>There was an error fetching the data.</p>';
