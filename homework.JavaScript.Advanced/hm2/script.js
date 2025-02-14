@@ -23,6 +23,7 @@ function fetchUrl() {
             console.error(`There was a problem fetching the data: ${error}`);  
         });
 };
+
 function gradeHigherThan3(students) {
     let output1 = document.getElementById('output1');
     const grades = students.filter((student)=> student.averageGrade > 3);

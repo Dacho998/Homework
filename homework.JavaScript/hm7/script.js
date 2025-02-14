@@ -19,5 +19,3 @@ function createTable() {
         }
     } tableContainer.appendChild(table);
 }
-
-
