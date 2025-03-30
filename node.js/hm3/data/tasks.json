@@ -6,21 +6,9 @@
     "id": 1
   },
   {
-    "title": "Hamlet",
-    "author": "William Shakespeare",
-    "year": 1609,
-    "id": 3
-  },
-  {
-    "title": "1984",
-    "author": "George Orwell",
-    "year": 1949,
-    "id": 4
-  },
-  {
-    "title": "Harry Potter and the Sorcerer's Stone",
-    "author": "J.K. Rowling",
-    "year": 1997,
-    "id": 5
+    "title": "Percy Jackson & The Olympians: The Lightning Thief",
+    "author": "Rick Riordan",
+    "year": 2004,
+    "id": 2
   }
 ]
