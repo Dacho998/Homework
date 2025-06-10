@@ -1,0 +1,20 @@
+.books {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books th,
+.books td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.read {
+  background-color: #d4edda;
+  color: green;
+}
+
+.notRead {
+  background-color: #f8d7da;
+  color: red;
+}
