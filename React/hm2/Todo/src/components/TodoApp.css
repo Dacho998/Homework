@@ -1,0 +1,29 @@
+.todo-container {
+  width: 350px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-left: 4px solid #00FF43;
+  border-radius: 4px;
+}
+
+.todo-card.done {
+  color: green;
+  border-left-color: green;
+  font-weight: bold;
+}
+
+.finish-btn {
+  background: green;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
