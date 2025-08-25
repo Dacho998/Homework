@@ -1,0 +1,42 @@
+.todo-create-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.todo-create-container h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.todo-create-container div {
+  margin-bottom: 12px;
+}
+
+.todo-create-container label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.todo-create-container input,
+.todo-create-container textarea {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.todo-create-container button {
+  width: 100%;
+  padding: 8px;
+  background-color: #6aacf1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo-create-container button:hover {
+  color: white;
+  background-color: #0056b3;
+}

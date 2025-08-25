@@ -1,0 +1,41 @@
+<h2>Todo List</h2>
+<input type="text" placeholder="Search todos..." [(ngModel)]="search" />
+<div class="todos-container">
+<div class="todos-container">
+  @for (todo of filteredTodos(); track todo.id) {
+    <div
+      class="todo-card"
+      [ngClass]="{
+        completed: todo.status === 'done',
+        'in-progress': todo.status === 'in-progress',
+        pending: todo.status === 'pending'
+      }"
+    >
+      <h3>{{ todo.title }}</h3>
+      <p>{{ todo.description }}</p>
+      <p>
+        Status: <strong>{{ todo.status }}</strong>
+      </p>
+
+      @if (todo.status !== 'pending') {
+        <button (click)="updateStatus(todo.id, 'pending')">
+          Set Pending
+        </button>
+      }
+
+      @if (todo.status !== 'in-progress') {
+        <button (click)="updateStatus(todo.id, 'in-progress')">
+          Set In-Progress
+        </button>
+      }
+
+      @if (todo.status !== 'done') {
+        <button (click)="updateStatus(todo.id, 'done')">
+          Set Completed
+        </button>
+      }
+
+      <button (click)="deleteTodo(todo.id)">Delete</button>
+    </div>
+  }
+</div>
