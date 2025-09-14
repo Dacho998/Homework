@@ -1,0 +1,41 @@
+<div class="todo-create-container">
+  <h2>Create New Todo</h2>
+
+  <form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Title:</label>
+      <input type="text" formControlName="title" />
+      @if (hasError('title', 'required')) {
+        <div class="error">Enter: title</div>
+      }
+      @if (hasError('title', 'minlength')) {
+        <div class="error">Enter more than 3 characters</div>
+      }
+      @if (hasError('title', 'maxlength')) {
+        <div class="error">Maximum 50 characters allowed</div>
+      }
+    </div>
+
+    <div>
+      <label>Description:</label>
+      <textarea formControlName="description"></textarea>
+      @if (hasError('description', 'required')) {
+        <div class="error">Enter: description</div>
+      }
+      @if (hasError('description', 'minlength')) {
+        <div class="error">Enter more than 10 characters</div>
+      }
+    </div>
+
+    <div>
+      <label>Status:</label>
+      <select formControlName="status">
+        <option value="pending">Pending</option>
+        <option value="in-progress">In-Progress</option>
+        <option value="done">Completed</option>
+      </select>
+    </div>
+
+    <button type="submit" [disabled]="todoForm.invalid">Add Todo</button>
+  </form>
+</div>
